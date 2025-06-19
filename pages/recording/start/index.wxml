@@ -1,0 +1,7 @@
+<view class="container">
+  <camera device-position="front" flash="off" binderror="handleCameraError" style="width: 100%; height: 300px;"></camera>
+  <view class="canvas" style="background-color:{{backgroundColor}};">
+    <view wx:if="{{startCountDown>0}}" class="count-down">{{startCountDown }}</view>
+    <view wx:else class="count-down">{{recordCountDown }}</view>
+  </view>
+</view>

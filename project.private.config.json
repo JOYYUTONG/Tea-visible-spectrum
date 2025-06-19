@@ -1,0 +1,9 @@
+{
+  "description": "",
+  "projectname": "wx-tea",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "libVersion": "3.0.2"
+}

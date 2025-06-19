@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="wx-form">
+    <view class="wx-form-item">
+      <view class="wx-form-item__label">Recording Time(second)</view>
+      <view class="wx-form-item__value">
+        <t-slider value="{{RecordingTime}}" label="{{RecordingTime}}" min="{{5}}" max="{{100}}" step="{{5}}" bind:change="handleRecordingTimeChange" />
+      </view>
+    </view>
+    <view class="wx-form-item">
+      <view class="wx-form-item__label">Choose Color Mode</view>
+      <view class="wx-form-item__value">
+        <t-radio-group value="{{ChooseColorMode}}" bind:change="handleChooseColorModeChange">
+          <t-radio block="{{false}}" label="Custom" value="custom" />
+          <t-radio block="{{false}}" label="Range" value="range" />
+        </t-radio-group>
+      </view>
+    </view>
+    <view wx:if="{{ChooseColorMode==='custom'}}" class="wx-form-item">
+      <view class="wx-form-item__label">Color Range</view>
+      <view class="wx-form-item__value">
+        <view class="color-choose-wrapper">
+          <view wx:for="{{CustomColors}}" wx:key="{{item.color}}" data-index="{{index}}" class="color-item {{item.active?'active':''}}" style="background-color: {{item.color}};border-color:{{item.color}};" bind:tap="handleColorItemTap">
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:else class="wx-form-item">
+      <view class="wx-form-item__label">Color Range</view>
+      <view class="wx-form-item__value">
+        <t-slider class="wx-color-gamut" range value="{{ColorRange}}" min="{{0}}" max="{{Colors.length}}" bind:change="handleColorRangeChange" />
+      </view>
+    </view>
+  </view>
+  <t-button theme="primary" block bind:tap="handleStart">Start</t-button>
+</view>

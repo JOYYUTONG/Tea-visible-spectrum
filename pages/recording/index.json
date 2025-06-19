@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "record",
+  "usingComponents": {
+    "t-slider": "tdesign-miniprogram/slider/slider",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-radio-group": "tdesign-miniprogram/radio-group/radio-group",
+    "t-radio": "tdesign-miniprogram/radio/radio"
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"pages": [
+		"pages/recording/index",
+		"pages/recording/start/index",
+		"pages/index/index",
+		"pages/logs/logs"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "check",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#515151",
+		"selectedColor": "#409eff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "page",
+				"iconPath": "/public/tabBar/recording.png",
+				"selectedIconPath": "/public/tabBar/recording_active.png"
+			},
+			{
+				"pagePath": "pages/recording/index",
+				"text": "record",
+				"iconPath": "/public/tabBar/recording.png",
+				"selectedIconPath": "/public/tabBar/recording_active.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json",
+	"miniApp": {
+		"useAuthorizePage": false
+	}
+}

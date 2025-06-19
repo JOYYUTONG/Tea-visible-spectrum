@@ -1,0 +1,61 @@
+.container {
+  padding: 15px;
+}
+
+.wx-form {
+  padding-bottom: 20px;
+}
+
+.wx-form .wx-form-item {
+  color: #909399;
+  margin-bottom: 20px;
+}
+
+.wx-form .wx-form-item .wx-form-item__label {
+  margin-bottom: 15px;
+}
+
+.t-radio {
+  margin-right: 15px;
+}
+
+.t-radio:last-child {
+  margin-right: 0;
+}
+
+.color-choose-wrapper>view {
+  display: inline-block;
+}
+
+.color-choose-wrapper .color-item {
+  position:relative;
+  width: 21px;
+  height: 21px;
+  border: 2px solid;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.color-choose-wrapper .color-item.active::before {
+  position: absolute;
+  content: '√';
+  color: #ffffff;    
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: 700;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wx-color-gamut .t-slider__bar {
+  background: -webkit-linear-gradient(left, #ff0000 0%, #ff0d00 1%, #ff1a00 2%, #ff2600 3%, #ff3300 4%, #ff4000 5%, #ff4d00 6%, #ff5900 7%, #ff6600 8%, #ff7300 9%, #ff8000 10%, #ff8c00 11%, #ff9900 12%, #ffa600 13%, #ffb200 14%, #ffbf00 15%, #ffcc00 16%, #ffd900 17%, #ffe500 18%, #fff200 19%, #ffff00 20%, #f2ff00 21%, #e5ff00 22%, #d9ff00 23%, #ccff00 24%, #bfff00 25%, #b2ff00 26%, #a6ff00 27%, #99ff00 28%, #8cff00 29%, #80ff00 30%, #73ff00 31%, #66ff00 32%, #59ff00 33%, #4dff00 34%, #40ff00 35%, #33ff00 36%, #26ff00 37%, #1aff00 38%, #0dff00 39%, #00ff00 40%, #00f20c 41%, #00e51a 42%, #00d926 43%, #00cc33 44%, #00bf40 45%, #00b24d 46%, #00a659 47%, #009966 48%, #008c73 49%, #008080 50%, #00738c 51%, #006699 52%, #0059a6 53%, #004db2 54%, #0040bf 55%, #0033cc 56%, #0026d9 57%, #001ae5 58%, #000ded 59%, #0000ff 60%, #0d00ff 61%, #1a00ff 62%, #2600ff 63%, #3300ff 64%, #4000ff 65%, #4d00ff 66%, #5900ff 67%, #6600ff 68%, #7300ff 69%, #8000ff 70%, #8c00ff 71%, #9900ff 72%, #a600ff 73%, #b200ff 74%, #bf00ff 75%, #cc00ff 76%, #d900ff 77%, #e500ff 78%, #f200ff 79%, #ff00ff 80%, #ff00f2 81%, #ff00e5 82%, #ff00d9 83%, #ff00cc 84%, #ff00bf 85%, #ff00b2 86%, #ff00a6 87%, #ff0099 88%, #ff008c 89%, #ff0080 90%, #ff0073 91%, #ff0066 92%, #ff0059 93%, #ff004d 94%, #ff0040 95%, #ff0033 96%, #ff0026 97%, #ff001a 98%, #ff000d 99%, #ff0000 100%);
+}
+
+.wx-color-gamut .t-slider__line {
+  background-color: transparent;
+}
